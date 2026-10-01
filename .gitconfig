@@ -1,0 +1,30 @@
+[include]
+    path = ~/.gitconfig.local
+[push]
+    default = simple
+[core]
+    autocrlf = false
+    excludesfile = ~/.gitignore.global
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    df = diff --word-diff=color
+    history = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    ttype = cat-file -t
+    dump = cat-file -p
+    stu = status -uno
+	ff = "!for branch in `git for-each-ref --format=\"%(refname)\" refs/heads`; do echo \"${branch}:\"; git ls-tree -r --name-only $branch | nl -bn -w3 | grep \"$1\"; done; :"
+[diff]
+    tool = colordiff
+[difftool]
+    prompt = false
+[difftool "colordiff"]
+    cmd = colordiff $LOCAL $REMOTE
+[pull]
+    rebase = false
+[receive]
+    denyCurrentBranch = updateInstead
+[init]
+    defaultBranch = main

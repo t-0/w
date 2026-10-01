@@ -1,6 +1,7 @@
 /*
 !/.gitignore.global
 !/.gitconfig.local
+!/.gitconfig
 !/.gitignore
 !/.clang-format
 !/.astylerc
