@@ -1,0 +1,81 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+cmd+1",
+        "command": "tabulous.showTerminal1"
+    },
+    {
+        "key": "alt+cmd+2",
+        "command": "tabulous.showTerminal2"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "tabulous.createNamedTerminal"
+    },
+    {
+        "key": "cmd+k cmd+enter",
+        "command": "remove-empty-lines.inDocument"
+    },
+    {
+        "key": "cmd+k cmd+8",
+        "command": "extension.removeMultilineComments"
+    },
+    {
+        "key": "cmd+k cmd+/",
+        "command": "extension.removeSingleLineComments"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.action.sortLinesAscending"
+    },
+    {
+        "key": "ctrl+cmd+enter",
+        "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+i",
+        "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k u",
+        "command": "editor.action.transformToUppercase"
+    },
+    {
+        "key": "cmd+k u",
+        "command": "-workbench.action.closeUnmodifiedEditors"
+    },
+    {
+        "key": "cmd+k l",
+        "command": "editor.action.transformToLowercase"
+    },
+    {
+        "key": "shift+enter",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "\u001b\r"
+        },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+k /",
+        "command": "workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k shift+enter",
+        "command": "-workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k /",
+        "command": "workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    },
+    {
+        "key": "cmd+k shift+enter",
+        "command": "-workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+    }
+]
