@@ -1,4 +1,6 @@
 /*
+!/.gitignore.global
+!/.gitconfig.local
 !/.gitignore
 !/.clang-format
 !/.astylerc
