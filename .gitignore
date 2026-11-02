@@ -7,3 +7,5 @@
 !/.astylerc
 !/.emacs
 !/.tmux.conf
+!/Library
+!/Downloads
